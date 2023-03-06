@@ -27,8 +27,10 @@ nav a {
 }
 
 /* About */
-main {
+
+article {
   padding: 20px;
+  text-align: justify;
 }
 
 h1 {
@@ -46,21 +48,59 @@ h2 {
   margin-left: 300px;
 }
 
-
-
-main p {
+article p {
   margin-top: 20px;
   margin-right: 700px;
   font-size: 2em;
   color: var(--blue);
 }
 
+
+/* Projects */
+
+h3 {
+  color: var(--pink);
+  font-size: 5em;
+  text-align: center;
+  padding: 60px;
+}
  
+h3 span {
+ color: var(--blue);
+}
+
+.projects {
+  justify-content: center;
+  display: inline-flex;
+  flex-wrap: nowrap | wrap | wrap-reverse;
+  order: 3;
+}
+
+.card {
+  margin: 50px;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  border-style: solid;
+  border-width: 7px;
+  border-color: var(--blue);
+}
+
+.card a {
+ color: var(--blue);
+ text-decoration: none;
+}
+
+a:hover {
+  color: var(--pink);
+}
+
 /* Contact */
 
 .contactme {
-  display: flex;
-  margin-top: 300px;
+  display: inline-block;
+  margin-top: 90px;
+  float: inline-end;
 }
 
 h4 {
@@ -68,10 +108,22 @@ h4 {
   font-size: 3em;
 }
 
+.selfie {
+  border-radius: 200px;
+  margin-right: 100px;
+  width: 30%;
+  height: 30%;
+}
+
+h5 {
+  color: var(--pink);
+  float: right;
+}
 
 
 
 
+ 
 
 @media screen and (max-width: 768px) {
 
