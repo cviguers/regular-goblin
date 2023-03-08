@@ -3,10 +3,15 @@
   --blue: #D0E9F9;
   --white: #ffffff;
   --pink: #C9A9A6;
+  --cream: #FBFBF6;
 }
 
 a:hover {
   color: var(--pink);
+}
+
+body {
+  background-color: var(--cream);
 }
 
 /* Navigation */
@@ -28,14 +33,16 @@ nav a {
 
 /* About */
 
-article {
-  padding: 20px;
+.aboutme {
+  padding: 50px;
   text-align: justify;
+  justify-content: flex-end;
 }
 
 h1 {
   font-size: 12em;
   color: var(--blue);
+
 }
 
 h1 span {
@@ -43,16 +50,19 @@ h1 span {
 }
 
 h2 {
+  display: flex;
   font-size: .5em;
   color: var(--pink);
-  margin-left: 300px;
+  margin-left: 800px;
+  margin-bottom: 50px;
 }
 
 article p {
   margin-top: 20px;
-  margin-right: 700px;
+  margin-left: 400px;
   font-size: 2em;
   color: var(--blue);
+  float: right;
 }
 
 
@@ -71,9 +81,11 @@ h3 span {
 
 .projects {
   justify-content: center;
+  justify-items: center;
   display: inline-flex;
-  flex-wrap: nowrap | wrap | wrap-reverse;
+  flex-wrap: wrap;
   order: 3;
+  flex-grow: 3;
 }
 
 .card {
@@ -98,26 +110,33 @@ a:hover {
 /* Contact */
 
 .contactme {
-  display: inline-block;
-  margin-top: 90px;
-  float: inline-end;
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
 }
 
 h4 {
   color: var(--blue);
+  display: block;
   font-size: 3em;
-}
-
-.selfie {
-  border-radius: 200px;
-  margin-right: 100px;
-  width: 30%;
-  height: 30%;
 }
 
 h5 {
   color: var(--pink);
+  display: block;
   float: right;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.selfie {
+  border-radius: 200px;
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: 30%;
 }
 
 
