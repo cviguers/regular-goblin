@@ -96,6 +96,11 @@ h3 span {
   border-style: solid;
   border-width: 7px;
   border-color: var(--blue);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card a {
