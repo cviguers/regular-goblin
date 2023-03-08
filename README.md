@@ -31,7 +31,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ```
 
 ## Preview
-<img src="./assets/images/screenshot"/>
+<img src="./assets/images/screenshot.png"/>
 
 ## Deployed Application
 https://cviguers.github.io/regular-goblin/
